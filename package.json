@@ -9,7 +9,9 @@
     "scripts": {
         "api": "yarn workspace api build-docker",
         "client": "yarn workspace client build",
-        "build": "concurrently \"yarn api\"  \" yarn client \""
+        "client-dev": "yarn workspace client start",
+        "build": "concurrently \"yarn api\"  \" yarn client \"",
+        "build-dev": "concurrently \"yarn api\"  \" yarn client-dev \""
     },
     "devDependencies": {
         "concurrently": "^7.0.0"
