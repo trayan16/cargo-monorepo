@@ -7,7 +7,7 @@
         "client"
     ],
     "scripts": {
-        "api": "yarn workspace api test-build",
+        "api": "yarn workspace api build-docker",
         "client": "yarn workspace client start",
         "start": "concurrently --kill-others-on-fail \"yarn api\"  \" yarn client \""
     },
