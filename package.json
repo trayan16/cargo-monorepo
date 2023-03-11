@@ -8,8 +8,8 @@
     ],
     "scripts": {
         "api": "yarn workspace api build-docker",
-        "client": "yarn workspace client start",
-        "build": "concurrently --kill-others-on-fail \"yarn api\"  \" yarn client \""
+        "client": "yarn workspace client build",
+        "build": "concurrently \"yarn api\"  \" yarn client \""
     },
     "devDependencies": {
         "concurrently": "^7.0.0"
